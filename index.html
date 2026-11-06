@@ -3,54 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cruzeiro</title>
+    <title>História do Cruzeiro</title>
+    <style>
+        /* Configuração geral do fundo em degradê vertical (Azul Escuro -> Azul Cruzeiro -> Branco) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #003399, #0052cc, #ffffff);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* Topo da página */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Menu de navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 30, 90, 0.8);
+            padding: 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #66a3ff;
+        }
+
+        /* Container principal para organizar o conteúdo e a barra lateral */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 30px;
+        }
+
+        /* Área dos textos principais */
+        main {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        article {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        article h1, article h2 {
+            color: #003399;
+            border-bottom: 2px solid #0052cc;
+            padding-bottom: 5px;
+        }
+
+        /* Seção do vídeo */
+        .video-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .video-container iframe {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Barra lateral (Curiosidades e Títulos) */
+        aside {
+            flex: 1;
+            min-width: 280px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #003399;
+            margin-top: 0;
+            border-bottom: 2px solid #0052cc;
+            padding-bottom: 5px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>HISTÓRIA DO CRUZEIRO</h1>
         <p>Time de páginas heróicas e imortais!</p>
-</header>
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Noticias</a>
-    <a href="#">Contato</a>
-</nav>
-<main>
-    <article>
-        <h1>Começo do Clube</h1>
-        <p>O Cruzeiro Esporte Clube teve seu início em 2 de janeiro de 1921, em Belo Horizonte, quando foi fundado por imigrantes da colônia italiana sob o nome de Societá Sportiva Palestra Itália.</p>
+    </header>
 
-        <h2>Origem do nome</h2>
-        <p>O Cruzeiro Esporte Clube ganhou esse nome em 1942 em homenagem à constelação do Cruzeiro do Sul, um dos maiores símbolos da identidade nacional e presente na bandeira do Brasil.</p>
-        <picture>
-            <source media="(min-width:670px)" srcset="imagens/dan-droids.png">
-            <img src="imagens/dan-droids-pq.png" alt="Primeiro mascote do android"></picture>
-            <source media="(min-width:670px)" srcset="imagens/images.jpeg">
-            <img src="imagens/images.jpeg" alt="Elenco de 1966"></picture>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Contato</a>
+    </nav>
 
-  </article>
-  <div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ee-J_6ibi7M?si=smW-9YsjKlzZF2zW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  
-</main>
-<aside>
-    <h3>Outra curiosidade</h3>
-<p>O Palmeiras e o Cruzeiro compartilham uma forte ligação histórica: ambos nasceram com o nome Palestra Itália, fundados por comunidades de imigrantes italianos em São Paulo (em 1914) e em Belo Horizonte (em 1921)</p>
-<ul>
-    <li>Copa Libertadores da América (2 títulos) 1976 e 1997</li>
-    <li>Supercopa dos Campeões da Libertadores (2 títulos) 1991 e 1992</li>
-    <li>Recopa Sul-Americana (1 título): 1998</li>
-    <li>Copa Ouro (1 título): 1995</li>
-    <li>Copa Master da Supercopa (1 título): 1995</li>
-    <li>Campeonato Brasileiro / Taça Brasil (4 títulos): 1966, 2003, 2013 e 2014</li>
-    <li>Copa do Brasil (6 títulos — recordista junto ao torneio): 1993, 1996, 2000, 2003, 2017 e 2018</li>
-    <li>Campeonato Brasileiro - Série B (1 título): 2022</li>
-    <li>Copa Sul-Minas (2 títulos): 2001 e 2002</li>
-    <li>Copa Centro-Oeste (1 título): 1999</li>
-    <li>Campeonato Mineiro (39 títulos)</li>
-    </ul>
-</aside>
+    <!-- Adicionado container para organizar o layout lado a lado em telas grandes -->
+    <div class="container">
+        
+        <main>
+            <article>
+                <h1>Começo do Clube</h1>
+                <p>O Cruzeiro Esporte Clube teve seu início em 2 de janeiro de 1921, em Belo Horizonte, quando foi fundado por imigrantes da colônia italiana sob o nome de Societá Sportiva Palestra Itália.</p>
+                
+                <h2>Origem do nome</h2>
+                <p>O Cruzeiro Esporte Clube ganhou esse nome em 1942 em homenagem à constelação do Cruzeiro do Sul, um dos maiores símbolos da identidade nacional e presente na bandeira do Brasil.</p>
+                
+                <!-- Correção das tags de imagem que estavam quebradas no código original -->
+                <div style="margin-top: 20px; text-align: center;">
+                    <picture>
+                        <source media="(min-width:670px)" srcset="imagens/dan-droids.png">
+                        <img src="imagens/dan-droids-pq.png" alt="Primeiro mascote do android" style="max-width: 100%; height: auto; margin-bottom: 15px;">
+                    </picture>
+                    
+                    <picture>
+                        <source media="(min-width:670px)" srcset="imagens/images.jpeg">
+                        <img src="imagens/images.jpeg" alt="Elenco de 1966" style="max-width: 100%; height: auto;">
+                    </picture>
+                </div>
+            </article>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <aside>
+            <h3>Outra curiosidade</h3>
+            <p>O Palmeiras e o Cruzeiro compartilham uma forte ligação histórica: ambos nasceram com o nome Palestra Itália, fundados por comunidades de imigrantes italianos em São Paulo (em 1914) e em Belo Horizonte (em 1921).</p>
+            
+            <h3>Principais Títulos</h3>
+            <ul>
+                <li>Copa Libertadores da América (2 títulos): 1976 e 1997</li>
+                <li>Supercopa dos Campeões da Libertadores (2 títulos): 1991 e 1992</li>
+                <li>Recopa Sul-Americana (1 título): 1998</li>
+                <li>Copa Ouro (1 título): 1995</li>
+                <li>Copa Master da Supercopa (1 título): 1995</li>
+                <li>Campeonato Brasileiro / Taça Brasil (4 títulos): 1966, 2003, 2013 e 2014</li>
+                <li>Copa do Brasil (6 títulos — recordista junto ao torneio): 1993, 1996, 2000, 2003, 2017 e 2018</li>
+                <li>Campeonato Brasileiro - Série B (1 título): 2022</li>
+                <li>Copa Sul-Minas (2 títulos): 2001 e 2002</li>
+                <li>Copa Centro-Oeste (1 título): 1999</li>
+                <li>Campeonato Mineiro (39 títulos)</li>
+            </ul>
+        </aside>
+
+    </div>
+
 </body>
 </html>
 
