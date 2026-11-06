@@ -17,23 +17,33 @@
             line-height: 1.6;
         }
 
-        /* Topo da página */
+        /* Topo da página modificado para alinhar o escudo ao lado do título */
         header {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             padding: 40px 20px;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        header h1 {
+        .header-text h1 {
             margin: 0;
             font-size: 2.5em;
         }
 
-        header p {
+        .header-text p {
             font-style: italic;
             font-size: 1.2em;
             margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .header-logo img {
+            height: 80px; /* Tamanho ajustado para alinhar com o título */
+            width: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
         }
 
         /* Menu de navegação */
@@ -129,6 +139,11 @@
 
         /* Responsividade para telas menores */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column-reverse; /* Escudo fica acima do texto em telas pequenas */
+                text-align: center;
+                gap: 10px;
+            }
             .container {
                 flex-direction: column;
             }
@@ -138,8 +153,14 @@
 <body>
 
     <header>
-        <h1>HISTÓRIA DO CRUZEIRO</h1>
-        <p>Time de páginas heróicas e imortais!</p>
+        <div class="header-text">
+            <h1>HISTÓRIA DO CRUZEIRO</h1>
+            <p>Time de páginas heróicas e imortais!</p>
+        </div>
+        <div class="header-logo">
+            <!-- Link direto para uma imagem em vetor do escudo do Cruzeiro -->
+            <img src="https://wikimedia.org" alt="Escudo Oficial do Cruzeiro">
+        </div>
     </header>
 
     <nav>
@@ -148,9 +169,7 @@
         <a href="#">Contato</a>
     </nav>
 
-    <!-- Adicionado container para organizar o layout lado a lado em telas grandes -->
     <div class="container">
-        
         <main>
             <article>
                 <h1>Começo do Clube</h1>
@@ -158,14 +177,12 @@
                 
                 <h2>Origem do nome</h2>
                 <p>O Cruzeiro Esporte Clube ganhou esse nome em 1942 em homenagem à constelação do Cruzeiro do Sul, um dos maiores símbolos da identidade nacional e presente na bandeira do Brasil.</p>
-                
-                <!-- Correção das tags de imagem que estavam quebradas no código original -->
+
                 <div style="margin-top: 20px; text-align: center;">
                     <picture>
                         <source media="(min-width:670px)" srcset="imagens/dan-droids.png">
                         <img src="imagens/dan-droids-pq.png" alt="Primeiro mascote do android" style="max-width: 100%; height: auto; margin-bottom: 15px;">
                     </picture>
-                    
                     <picture>
                         <source media="(min-width:670px)" srcset="imagens/images.jpeg">
                         <img src="imagens/images.jpeg" alt="Elenco de 1966" style="max-width: 100%; height: auto;">
@@ -181,7 +198,7 @@
         <aside>
             <h3>Outra curiosidade</h3>
             <p>O Palmeiras e o Cruzeiro compartilham uma forte ligação histórica: ambos nasceram com o nome Palestra Itália, fundados por comunidades de imigrantes italianos em São Paulo (em 1914) e em Belo Horizonte (em 1921).</p>
-            
+
             <h3>Principais Títulos</h3>
             <ul>
                 <li>Copa Libertadores da América (2 títulos): 1976 e 1997</li>
@@ -197,7 +214,6 @@
                 <li>Campeonato Mineiro (39 títulos)</li>
             </ul>
         </aside>
-
     </div>
 
 </body>
