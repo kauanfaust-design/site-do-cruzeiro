@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História do Cruzeiro</title>
     <style>
-        /* Configuração geral do fundo em degradê vertical (Azul Escuro -> Azul Cruzeiro -> Branco) */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,7 +17,6 @@
             line-height: 1.6;
         }
 
-        /* Topo da página modificado para alinhar o escudo ao lado do título */
         header {
             display: flex;
             justify-content: center;
@@ -41,12 +40,10 @@
         }
 
         .header-logo img {
-            height: 80px; /* Tamanho ajustado para alinhar com o título */
+            height: 80px; 
             width: auto;
             filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
         }
-
-        /* Menu de navegação */
         nav {
             display: flex;
             justify-content: center;
@@ -65,8 +62,6 @@
         nav a:hover {
             color: #66a3ff;
         }
-
-        /* Container principal para organizar o conteúdo e a barra lateral */
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -76,7 +71,6 @@
             gap: 30px;
         }
 
-        /* Área dos textos principais */
         main {
             flex: 2;
             min-width: 300px;
@@ -95,8 +89,6 @@
             border-bottom: 2px solid #0052cc;
             padding-bottom: 5px;
         }
-
-        /* Seção do vídeo */
         .video-container {
             background-color: rgba(255, 255, 255, 0.95);
             padding: 20px;
@@ -109,8 +101,6 @@
             max-width: 100%;
             border-radius: 4px;
         }
-
-        /* Barra lateral (Curiosidades e Títulos) */
         aside {
             flex: 1;
             min-width: 280px;
@@ -136,11 +126,9 @@
             margin-bottom: 10px;
             font-size: 0.95em;
         }
-
-        /* Responsividade para telas menores */
         @media (max-width: 768px) {
             header {
-                flex-direction: column-reverse; /* Escudo fica acima do texto em telas pequenas */
+                flex-direction: column-reverse;
                 text-align: center;
                 gap: 10px;
             }
@@ -201,7 +189,7 @@ Desde então, o Cruzeiro passou a utilizar o nome que carrega até hoje, tornand
         </main>
 
         <aside>
-            <h3>Outra curiosidade</h3>
+            <h3>Uma curiosidade</h3>
             <p>O Palmeiras e o Cruzeiro compartilham uma forte ligação histórica: ambos nasceram com o nome Palestra Itália, fundados por comunidades de imigrantes italianos em São Paulo (em 1914) e em Belo Horizonte (em 1921).</p>
 
             <h3>Principais Títulos</h3>
@@ -220,6 +208,5 @@ Desde então, o Cruzeiro passou a utilizar o nome que carrega até hoje, tornand
             </ul>
         </aside>
     </div>
-
 </body>
 </html>
